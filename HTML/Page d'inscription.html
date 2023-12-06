@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESAIP LAN</title>
+    <link rel="stylesheet" href="../CSS/Inscription.css">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Press+Start+2P&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <img onclick="menu()" src="../IMG/logo-esaipgames.png" class="menu">
+      <div id="navImg">
+          <img src="./../IMG/Banniere_esaip_lan_1-removebg-preview.png">
+      </div>
+      <nav>
+          <ul id="menu">
+              <li id="Accueil"><a href="./Accueil.html">Accueil</a></li>
+              <li id="Evènements"><a href="./Evenement.html">Règlements</a></li>
+              <li id="Membres"><a href="./Membres.html">Membres</a></li>
+              <li id="Partenaires"><a href="./Partenaires.html">Partenaires</a></li>
+          </ul>
+      </nav>
+  </header>
+    
+
+    <form action="../PHP/save.php" method="post">
+      <h1>Inscription à l'ESAIP LAN</h1>
+
+      <label for="nom">Nom :
+      <input type="text" id="nom" name="nom" required /></label><br />
+
+      <label for="prenom">Prénom :
+      <input type="text" id="prenom" name="prenom" required /></label><br />
+
+      <label for="pseudo">Pseudo :
+      <input type="text" id="pseudo" name="pseudo" required /></label><br />
+
+      <label for="email">Email :
+      <input type="email" id="email" name="email" required /></label><br />
+
+      <label for="team">Nom de l'équipe :
+      <input type="team" id="team" name="team" required /></label><br />
+
+      <label for="discord">Discord :
+      <input type="discord" id="discord" name="discord" required /></label><br />
+
+      <label>Repas :</label>
+
+      <input type="radio" id="sans_repas" name="repas" value="sans" checked />
+      <label class="choix" for="sans_repas">2 repas midi et soir </label>
+
+      <input type="radio" id="sans_repas" name="repas" value="sans" checked />
+      <label class="choix" for="sans_repas">1 repas midi</label>
+
+      <input type="radio" id="avec_repas" name="repas" value="avec" />
+      <label class="choix" for="avec_repas">Sans repas</label><br />
+
+      <label>Matériel :</label>
+
+      <input type="radio" id="pc" name="pc" value="sans" checked />
+      <label class="choix" for="pc">PC fixe / Desktop</label>
+
+      <input type="radio" id="pc" name="pc" value="avec" />
+      <label class="choix" for="pc">PC portable / laptop</label>
+
+      <label for="jeu">Vous souhaitez vous inscrire en tant que</label>
+      <select id="jeu" name="jeu" required>
+        <option value="Spectateur">Spectateur</option>
+        <option value="rocket_league">Participant Rocket League</option>
+        <option value="league_of_legends">Participant League of Legends</option>
+        <option value="Valorant">Participant Valorant</option></select
+      ><br /><br />
+      <h2>Total :</h2>
+      <p>
+        Afin de jouer dans de meilleurs conditions, nous vous invitons à prendre
+        votre câble Ethernet.
+      </p>
+
+      <input type="submit" value="S'inscrire">
+    </form>
+    <script src="../JS/script.js"></script>
+  </body>
+</html>

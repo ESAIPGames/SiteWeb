@@ -1,0 +1,78 @@
+body{
+  background-color: rgb(24, 24, 24);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header{
+  user-select: none;
+  display: flex;
+  flex-direction: row;
+  background: rgb(56, 56, 56);
+  justify-content: space-between;
+  border-bottom: 3px solid var(--blue);
+  height: 100px;
+  width: 100%;
+}
+.menu{
+  display: none;
+}
+#navImg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+#navImg>img{
+  height: 100px;
+}
+header>nav{
+  display: flex;
+  align-items: center;
+}
+header>nav>ul{
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  margin-right: 50px;
+}
+header>nav>ul>li>a{
+  font-family: "lemonmilkboldita";
+  font-weight: 100;
+  color: white;
+  text-decoration: none;
+  margin-right: 25px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+a:hover{
+  color: var(--blue);
+  transition: 0.3s;
+}
+.active{
+  border-bottom: 3px solid var(--blue);
+}
+form{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+form>h1{
+  margin-bottom: 20px;
+  color: var(--blue);
+}
+@media screen and (max-width: 425px) {
+  header>nav>ul>li>a{
+    font-size: 10px;
+    margin-right: 5px;
+  }
+  header>nav>ul{
+    margin-right: 5px;
+  }
+  #navImg>img{
+    height: 75px;
+  }
+}
