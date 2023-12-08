@@ -175,6 +175,14 @@ main {
   flex-direction: row;
   justify-content: center;
 }
+.button-container2 {
+  padding: 10px;
+}
+
+.button-container2 > a > img {
+  height: 15vh;
+  width: auto;
+}
 
 #inscriptions {
   padding: 15px;
