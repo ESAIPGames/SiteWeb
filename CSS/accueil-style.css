@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-body{
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
   background-color: rgb(24, 24, 24);
 }
-header{
+header {
   user-select: none;
   display: flex;
   flex-direction: row;
@@ -12,30 +12,30 @@ header{
   height: 100px;
   width: 100%;
 }
-.menu{
+.menu {
   display: none;
 }
-#navImg{
+#navImg {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-left: 10px;
 }
-#navImg>img{
+#navImg > img {
   height: 100px;
 }
-header>nav{
+header > nav {
   display: flex;
   align-items: center;
 }
-header>nav>ul{
+header > nav > ul {
   display: flex;
   list-style-type: none;
   flex-direction: row;
   margin-right: 50px;
 }
-header>nav>ul>li>a{
+header > nav > ul > li > a {
   font-family: "lemonmilkboldita";
   font-weight: 100;
   color: white;
@@ -44,150 +44,159 @@ header>nav>ul>li>a{
   font-size: 18px;
   transition: 0.3s;
 }
-a:hover{
+a:hover {
   color: var(--blue);
   transition: 0.3s;
 }
-.active{
+.active {
   border-bottom: 3px solid var(--blue);
 }
-main{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 200px;
-}
-main>article{
-  width: 70%;
-  margin-left: 50px;
-}
-main>article>p{
-  color: white;
-  font-family: 'lemonmilklight', sans-serif;
-  padding-top: 12.5px;
-  padding-bottom: 12.5px;
-  font-size: 15px;
-  letter-spacing: 2.5px;
-}
-main>article>p>a{
-  font-size: 18px;
-  text-decoration: none;
-  color: white;
-  font-family: 'lemonmilklight', sans-serif;
-}
-main>.button-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#inscription{
-  background: var(--blue);
-  padding: 5px;
-  border: 2px solid black;
-  border-radius: 10px;
-}
-#inscription>a{
-  text-decoration: none;
-}
-#inscription>a>p{
-  color: white;
-  font-style: italic;
-  font-size: 20px;
-  font-family: 'lemonmilkboldita', sans-serif;
-}
-main>.button-container>img{
-  width: 600px;
-}
+
 @media screen and (max-width: 1024px) {
-  main{
+  main {
     margin-top: 100px;
     margin-left: 25px;
     margin-right: 25px;
   }
-  main>article>p{
+  main > article > p {
     font-size: 12px;
   }
-  main>article>p>a{
+  main > article > p > a {
     font-size: 12px;
   }
 }
 @media screen and (max-width: 768px) {
-  main{
+  main {
     margin-top: 10px;
     margin-left: 25px;
     margin-right: 25px;
   }
-  main>article>p{
+  main > article > p {
     font-size: 12px;
   }
-  header>nav>ul>li>a{
+  header > nav > ul > li > a {
     font-size: 10px;
     margin-right: 5px;
   }
-  main{
+  main {
     flex-direction: column;
   }
-  header>nav>ul{
+  header > nav > ul {
     margin-right: 5px;
   }
 }
 @media screen and (max-width: 425px) {
-  main{
+  main {
     margin-top: 10px;
     margin-left: 25px;
     margin-right: 25px;
   }
-  main>article>p{
+  main > article > p {
     font-size: 12px;
   }
-  #navImg>img{
+  #navImg > img {
     height: 75px;
   }
-  header>nav>ul>li>a{
+  header > nav > ul > li > a {
     font-size: 10px;
     margin-right: 5px;
   }
-  main>.button-container>img{
+  main > .button-container > img {
     width: 200px;
   }
-  main{
+  main {
     flex-direction: column;
   }
 }
 
-.button-container {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+body {
+  margin: 0;
+  background-color: rgb(39, 39, 39);
+  color: white;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  width: 200px; /* Adjust the width as needed */
-  margin-bottom: 10px; /* Optional: Add some spacing above the buttons */
 }
 
-.button-container button {
-  padding: 10px;
-  /* Add any additional styles as needed */
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-style: italic;
+  color: white;
 }
 
-.button-discord{
-  border: 4px solid rgb(0, 0, 155);
-  border-radius: 15px;
-  padding: 5px;
-  transition: 0.3s;
+a:hover {
+  color: aqua;
 }
-.button-discord:hover{
-  border: 4px solid rgb(0, 0, 226);
-  transition: 0.3s;
+
+main .content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  text-align: left;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+  max-width: 90vw;
 }
-.button-event{
-  border: 4px solid rgb(155, 0, 0);
-  border-radius: 15px;
-  padding: 5px;
-  transition: 0.3s;
+
+main .content section {
+  width: 50%;
+  max-width: 90%;
 }
-.button-event:hover{
-  border: 4px solid rgb(226, 0, 0);
-  transition: 0.3s;
+
+main .content section p {
+  width: auto;
+  margin: 20px 0;
+}
+
+main .content img {
+  max-width: 90%;
+  user-select: none;
+}
+
+main img {
+  max-width: 100%;
+}
+
+main {
+  margin: 40px auto 0 auto;
+  margin-top: 40px;
+  text-align: center;
+}
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#inscriptions {
+  padding: 15px;
+  background-color: rgb(0, 204, 255);
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: bold;
+  user-select: none;
+  width: auto;
+}
+
+#inscriptions:hover {
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  main .content section {
+    width: 90%;
+  }
 }
