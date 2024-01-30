@@ -1,24 +1,24 @@
-:root{
-    --blue: rgb(0, 204, 255);
+:root {
+  --blue: rgb(0, 204, 255);
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'lemon milk bold italic';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "lemonmilkboldita";
 }
 *::selection {
-    background: var(--blue)
+  background: var(--blue);
 }
 @font-face {
-    font-family: "lemonmilkregular";
-    src: url("../font/LEMONMILK-Regular.otf");
+  font-family: "lemonmilkregular";
+  src: url("../font/LEMONMILK-Regular.otf");
 }
 @font-face {
-    font-family: "lemonmilkboldita";
-    src: url("../font/LEMONMILK-BoldItalic.otf");
+  font-family: "lemonmilkboldita";
+  src: url("../font/LEMONMILK-BoldItalic.otf");
 }
 @font-face {
-    font-family: "lemonmilklight";
-    src: url("../font/LEMONMILK-Light.otf");
+  font-family: "lemonmilklight";
+  src: url("../font/LEMONMILK-Light.otf");
 }
